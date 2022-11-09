@@ -153,7 +153,7 @@ export default class SweetAlert extends Component {
     }
   }
 
-  componentWillReceiveProps(props) {
+  UNSAFE_componentWillReceiveProps(props) {
     this.setupWithProps(props);
 
     const oldOutsideClickHandler = this.props.onOutsideClick;
